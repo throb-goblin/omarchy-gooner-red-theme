@@ -1,4 +1,4 @@
-# Red Noir — Omarchy Theme
+# Gooner Red — Omarchy Theme
 
 A dark red noir theme for [Omarchy](https://omarchy.org/). Deep crimson base, pure red accents, muted rose borders, and electric blue terminals.
 
@@ -8,8 +8,8 @@ A dark red noir theme for [Omarchy](https://omarchy.org/). Deep crimson base, pu
 ## Install
 
 ```bash
-omarchy-theme-install https://github.com/throb-goblin/omarchy-red-noir-theme
-omarchy-theme-set "red-noir"
+omarchy-theme-install https://github.com/throb-goblin/omarchy-gooner-red-theme
+omarchy-theme-set "gooner-red"
 ```
 
 ## Palette
@@ -42,8 +42,8 @@ omarchy-theme-set "red-noir"
 ## Components
 
 - **Hyprland** — border colors, shadow, blur, rounded corners, spring animations
-- **Walker** — red noir launcher with matching base/accent colors
-- **Waybar** — dark red base with warm foreground
+- **Walker** — launcher with full layout and red noir colors
+- **Waybar** — complete pill layout with dark red base
 - **Mako** — notifications with red border and dark base
 - **SwayOSD** — red gradient progress bar
 - **Hyprlock** — minimal lock screen with red glow
@@ -51,6 +51,10 @@ omarchy-theme-set "red-noir"
 - **btop** — grey → muted red → primary red gradients
 - **Neovim** — Matte Black colorscheme
 - **VSCode** — Matte Black theme
+
+## Walker Config
+
+Copy `walker-config.toml` to `~/.config/walker/config.toml` to apply the full walker behaviour settings.
 
 ## License
 
