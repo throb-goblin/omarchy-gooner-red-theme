@@ -248,8 +248,8 @@ window#waybar.empty #window {
 }
 
 #clock {
-  background-color: @accent;
-  color: @base-bg;
+  background-color: #ffffff;
+  color: #1b1112;
   border-radius: 16px;
   margin-right: 10px;
   padding-right: 10px;
