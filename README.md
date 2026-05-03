@@ -4,6 +4,7 @@ A dark red noir theme for [Omarchy](https://omarchy.org/). Deep crimson base, pu
 
 ![Preview 1](screenshots/preview-1.png)
 ![Preview 2](screenshots/preview-2.png)
+![Preview 3](screenshots/preview-3.png)
 
 ## Install
 
