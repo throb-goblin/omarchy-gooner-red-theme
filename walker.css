@@ -9,7 +9,7 @@
 
 * {
   all: unset;
-  font-family: monospace;
+  font-family: 'CaskaydiaMono Nerd Font Mono';
   font-size: 18px;
   color: @text;
 }
