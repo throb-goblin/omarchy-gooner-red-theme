@@ -1,6 +1,6 @@
 # Gooner Red — Omarchy Theme
 
-A dark red noir theme for [Omarchy](https://omarchy.org/). Deep crimson base, pure red accents, muted rose borders, and electric blue terminals.
+A red noir gooner theme for [Omarchy](https://omarchy.org/). Deep crimson base, pure red accents and muted rose borders.
 
 ![Preview 1](screenshots/preview-1.png)
 ![Preview 2](screenshots/preview-2.png)
