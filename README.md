@@ -4,7 +4,6 @@ A red noir gooner theme for [Omarchy](https://omarchy.org/). Deep crimson base, 
 
 ![Preview 1](screenshots/preview-1.png)
 ![Preview 2](screenshots/preview-2.png)
-![Preview 3](screenshots/preview-3.png)
 
 ## Requirements
 
