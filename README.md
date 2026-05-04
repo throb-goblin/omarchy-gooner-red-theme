@@ -6,6 +6,14 @@ A red noir gooner theme for [Omarchy](https://omarchy.org/). Deep crimson base, 
 ![Preview 2](screenshots/preview-2.png)
 ![Preview 3](screenshots/preview-3.png)
 
+## Requirements
+
+- [`ttf-nerd-fonts-symbols-mono`](https://archlinux.org/packages/extra/any/ttf-nerd-fonts-symbols-mono/) — required for correct icon rendering in Waybar
+
+```bash
+fc-list | grep -q "Symbols Nerd Font Mono" || yay -S --noconfirm ttf-nerd-fonts-symbols-mono
+```
+
 ## Install
 
 ```bash

@@ -1,4 +1,4 @@
-@define-color background rgba(27, 17, 18, 0.85);
+@define-color background #1b1112;
 @define-color foreground #FFEAEA;
 @define-color accent     #ff3a3a;
 @define-color border     #ff3a3a;
@@ -22,6 +22,20 @@ window#waybar {
   background: transparent;
   margin-top: 10px;
 }
+
+#custom-power,
+#custom-expand-icon,
+#custom-osk,
+#custom-update,
+#bluetooth,
+#network,
+#pulseaudio,
+#battery,
+#custom-omarchy {
+  font-family: 'Symbols Nerd Font Mono', 'CaskaydiaMono Nerd Font';
+  font-weight: normal;
+}
+
 
 #custom-power,
 #cpu,
@@ -59,35 +73,38 @@ window#waybar {
 #pulseaudio:hover,
 #battery:hover,
 #custom-omarchy:hover,
-#custom-osk:hover {
-  background-color: @hover-bg;
+#custom-osk:hover,
+#clock:hover {
+  color: @accent;
 }
 
 #window {
   margin: 5px 0;
-  background: @background;
+  background-color: @background;
   padding: 0 10px;
   border-radius: 16px;
   margin-left: 10px;
   color: @foreground;
 }
 
+
 window#waybar.empty #window {
-  background: transparent;
+  background-color: transparent;
   padding: 0;
   margin-left: 0;
 }
 
 #custom-power {
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
+  border-radius: 16px;
   margin-left: 10px;
-  padding-left: 10px;
+  margin-right: 6px;
+  padding: 0 10px;
   font-size: 16px;
 }
 
 #cpu {
-  border-radius: 0;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 
 #memory {
@@ -103,7 +120,7 @@ window#waybar.empty #window {
 #custom-update {
   border-radius: 16px;
   margin-left: 10px;
-  padding-right: 12px;
+  padding: 0 10px;
 }
 
 #workspaces {
@@ -122,8 +139,11 @@ window#waybar.empty #window {
   border-radius: 10px;
 }
 
-#workspaces button:hover {
-  background-color: rgba(185, 246, 202, 0.10);
+#workspaces button:hover,
+#workspaces button.active:hover {
+  background-color: transparent;
+  color: @accent;
+  box-shadow: none;
 }
 
 #workspaces button.active {
@@ -163,13 +183,11 @@ window#waybar.empty #window {
   padding: 0 10px 0 8px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
-  border-right: 2px solid @background;
-  transition: background-color 0.3s ease, border-right-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 #custom-expand-icon:hover {
-  background-color: @hover-bg;
-  border-right-color: @hover-bg;
+  color: @accent;
 }
 
 #tray {
@@ -210,23 +228,8 @@ window#waybar.empty #window {
 }
 
 #custom-osk,
-#bluetooth,
-#network,
-#pulseaudio,
-#battery,
-#custom-omarchy {
-  background-color: @background;
-  color: @foreground;
-  margin: 5px 0;
-  padding: 0 10px;
-  border-radius: 0;
-}
-
-#custom-osk,
 #network {
-  font-size: 24px;
-  min-height: 0;
-  min-width: 0;
+  font-size: 16px;
 }
 
 #custom-osk {
@@ -248,16 +251,11 @@ window#waybar.empty #window {
 }
 
 #clock {
-  background-color: #ffffff;
-  color: #1b1112;
+  background-color: @background;
+  color: @foreground;
   border-radius: 16px;
   margin-right: 10px;
   padding-right: 10px;
-}
-
-#clock:hover {
-  background-color: @background;
-  color: @foreground;
 }
 
 #network.disconnected,
@@ -273,6 +271,11 @@ window#waybar.empty #window {
 #battery.charging,
 #battery.plugged {
   color: @foreground;
+}
+
+#battery.charging:hover,
+#battery.plugged:hover {
+  color: @accent;
 }
 
 @keyframes blink {
