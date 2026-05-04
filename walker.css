@@ -30,6 +30,7 @@ scrollbar {
   background: alpha(@base, 0.95);
   padding: 20px;
   border: 1.5px solid @border;
+  border-radius: 16px;
 }
 
 .preview-box {
