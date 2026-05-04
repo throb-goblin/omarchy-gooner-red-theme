@@ -36,16 +36,18 @@ omarchy-theme-set "gooner-red"
 
 ## Terminal ANSI Palette
 
+Monochromatic red-noir approach — colors 2–4 are shades of red rather than green/yellow/blue, with cool greys for magenta and cyan.
+
 | # | Normal | Bright |
 |---|--------|--------|
-| 0 black | `#1A0E0E` | `#2B1818` |
+| 0 black | `#1A0E0E` | `#4b515b` |
 | 1 red | `#b33a3a` | `#ff3a3a` |
-| 2 green | `#C05A5A` | `#D97171` |
-| 3 yellow | `#D66B6B` | `#E87F7F` |
-| 4 blue | `#1e90ff` | `#60b8ff` |
-| 5 magenta | `#bf7b75` | `#d99189` |
-| 6 cyan | `#d97a7a` | `#e89494` |
-| 7 white | `#F2E8E8` | `#FFF1F1` |
+| 2 red (mid) | `#d13a3a` | `#d13a3a` |
+| 3 red (dark) | `#9e3a3a` | `#9e3a3a` |
+| 4 red (muted) | `#ad3a3a` | `#ad3a3a` |
+| 5 magenta | `#c3c8d0` | `#c3c8d0` |
+| 6 cyan | `#8f949c` | `#8f949c` |
+| 7 white | `#b9bec6` | `#eceff2` |
 
 ## Components
 
