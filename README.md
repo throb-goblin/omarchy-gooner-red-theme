@@ -20,7 +20,9 @@ omarchy-theme-install https://github.com/throb-goblin/omarchy-gooner-red-theme
 omarchy-theme-set "gooner-red"
 ```
 
-> **Walker:** also copy `walker-config.toml` to `~/.config/walker/config.toml` to apply the full launcher layout and behaviour settings.
+> **Waybar:** copy `waybar-config.jsonc` to `~/.config/waybar/config.jsonc` to apply the full module layout. The CSS alone won't render correctly without it. Then update the `hwmon-path` in the temperature module to match your hardware — find the right path with `find /sys/devices -name "temp1_input" 2>/dev/null`.
+
+> **Walker:** copy `walker-config.toml` to `~/.config/walker/config.toml` to apply the full launcher layout and behaviour settings.
 
 ## Palette
 
