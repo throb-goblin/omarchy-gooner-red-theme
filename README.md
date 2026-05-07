@@ -20,6 +20,8 @@ omarchy-theme-install https://github.com/throb-goblin/omarchy-gooner-red-theme
 omarchy-theme-set "gooner-red"
 ```
 
+> **Walker:** also copy `walker-config.toml` to `~/.config/walker/config.toml` to apply the full launcher layout and behaviour settings.
+
 ## Palette
 
 | Role | Hex |
@@ -31,7 +33,7 @@ omarchy-theme-set "gooner-red"
 | Muted red | `#b33a3a` |
 | Active border | `#bf7b75` |
 | Inactive border | `#642425` |
-| Active shadow | `rgba(ff3a3a, 0.4)` |
+| Active shadow | `#ff3a3a66` |
 | Selection | `#372223` |
 
 ## Terminal ANSI Palette
@@ -61,10 +63,6 @@ Monochromatic red-noir approach — colors 2–4 are shades of red rather than g
 - **btop** — grey → muted red → primary red gradients
 - **Neovim** — Matte Black colorscheme
 - **VSCode** — Matte Black theme
-
-## Walker Config
-
-Copy `walker-config.toml` to `~/.config/walker/config.toml` to apply the full walker behaviour settings.
 
 ## License
 
