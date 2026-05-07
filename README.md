@@ -24,6 +24,20 @@ omarchy-theme-set "gooner-red"
 
 > **Walker:** copy `walker-config.toml` to `~/.config/walker/config.toml` to apply the full launcher layout and behaviour settings.
 
+## Plymouth Boot Splash
+
+The `plymouth/` directory contains a custom boot splash. This requires a manual install as it needs sudo and an initramfs rebuild.
+
+```bash
+sudo mkdir -p /usr/share/plymouth/themes/omarchy-red
+sudo cp plymouth/* /usr/share/plymouth/themes/omarchy-red/
+sudo plymouth-set-default-theme omarchy-red
+
+# Rebuild initramfs (use the second line if you're on Limine)
+sudo mkinitcpio -P
+# sudo limine-mkinitcpio
+```
+
 ## Palette
 
 | Role | Hex |
@@ -60,7 +74,8 @@ Monochromatic red-noir approach — colors 2–4 are shades of red rather than g
 - **Waybar** — complete pill layout with dark red base
 - **Mako** — notifications with red border and dark base
 - **SwayOSD** — red gradient progress bar
-- **Hyprlock** — minimal lock screen with red glow
+- **Hyprlock** — minimal lock screen
+- **Plymouth** — red boot splash with animated progress bar
 - **Alacritty / Ghostty / Kitty** — full ANSI palette
 - **btop** — grey → muted red → primary red gradients
 - **Neovim** — Matte Black colorscheme
