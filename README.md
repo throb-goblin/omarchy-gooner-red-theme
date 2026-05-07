@@ -24,6 +24,8 @@ omarchy-theme-set "gooner-red"
 
 > **Walker:** copy `walker-config.toml` to `~/.config/walker/config.toml` to apply the full launcher layout and behaviour settings.
 
+> **About:** copy `about.txt` to `~/.config/omarchy/branding/about.txt` to apply the custom branding shown in the Omarchy menu.
+
 ## Plymouth Boot Splash
 
 The `plymouth/` directory contains a custom boot splash. This requires a manual install as it needs sudo and an initramfs rebuild.
